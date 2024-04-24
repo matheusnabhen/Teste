@@ -1,0 +1,26 @@
+int main ()
+{ 
+  float media, freq
+  string nome;
+ 
+  cout << "Digite seu nome":";
+  cin >> Nome;
+  cout <<endl<< "Digite sua media final:";
+  cin >> media;
+
+  cout<< "Digite sua frequencia final:";
+  cin >> freq;
+
+  if(media >= 5 and freq >= 75){
+      cout<< nome <<", parabens, voce foi aprovado" <<endl;
+  } else if(media < 6 and freq < 75) {
+      cout<< nome <<", voce foi reprovado por media e frequencia" <<endl;
+  } else if(media < 6 and media >=75) {
+      cout<< nome <<", voce foi reprovado por media" <<endl;
+  } else {
+      cout<< nome <<", voce foi reprovado pela frequencia" << endl;
+  }
+
+  return 0;
+}
+  
