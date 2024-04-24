@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class MediaPonderada {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.println("Insira a primeira média:");
+        double media1 = scanner.nextDouble();
+        
+        System.out.println("Insira a segunda média:");
+        double media2 = scanner.nextDouble();
+        
+        System.out.println("Insira a terceira média:");
+        double media3 = scanner.nextDouble();
+        
+        System.out.println("Insira a quarta média:");
+        double media4 = scanner.nextDouble();
+        
+        double mediaFinal = calcularMediaPonderada(media1, media2, media3, media4);
+        
+        System.out.println("A média final é: " + mediaFinal);
+        
+        scanner.close();
+    }
+    
+    public static double calcularMediaPonderada(double media1, double media2, double media3, double media4) {
+        double somaPesos = 1 + 2 + 3 + 4;
+        double mediaFinal = (media1 * 1 + media2 * 2 + media3 * 3 + media4 * 4) / somaPesos;
+        return mediaFinal;
+    }
+}
