@@ -1,0 +1,13 @@
+
+int main() {
+    float lado, perimetro;
+    
+    cout << "Digite o comprimento de um lado do quadrado: ";
+    cin >> lado;
+    
+    perimetro = 4 * lado;
+    
+    cout << "O perímetro do quadrado é: " << perimetro << endl;
+    
+    return 0;
+}
